@@ -30,7 +30,7 @@ const GeoCoderMarker = ({address}) => {
 
   return (
     <Marker position={position} icon={DefaulIcon}>
-        <Popup/>
+        <Popup content={address}/>
     </Marker>
   )
 }
