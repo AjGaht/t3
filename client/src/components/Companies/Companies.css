@@ -1,5 +1,5 @@
 .c-container{
-    justify-content: space-around;
+    justify-content:  space-around!important;
     gap: 1rem;
 }
 .c-container>img{

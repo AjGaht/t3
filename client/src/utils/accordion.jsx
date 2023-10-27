@@ -1,23 +1,22 @@
 import { HiShieldCheck } from "react-icons/hi";
-import { MdCancel, MdAnalytics } from "react-icons/md";
 const data = [
   {
     icon: <HiShieldCheck/>,
-    heading: "Best interest rates on the market",
+    heading: "Business Highlights",
     detail:
-      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+      "We offer end-to-end managed solutions under an Opex model, with 24/7 support and monthly payments for hassle-free management. Grow your Business with us",
   },
   {
-    icon: <MdCancel />,
-    heading: "Prevent unstable prices",
+    icon: <HiShieldCheck />,
+    heading: "T3 Strategy",
     detail:
-      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+      "Our solutions are designed to enable your company to focus on its core business while we take care of the technical details. Trust us to deliver the best IT solutions for your business.",
   },
   {
-    icon: <MdAnalytics />,
-    heading: "Best price on the market",
+    icon: <HiShieldCheck />,
+    heading: "T3 Goals",
     detail:
-      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+      "We keep culture and creativity at the heart of everything we do. Our mission is to help your business grow by providing best affordable and effective IT & Teleecommunication solutions.",
   },
 ];
 export default data;

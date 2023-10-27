@@ -6,6 +6,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import UserDetailContext from "../../context/UserDetailContext";
 import { useMutation } from "react-query";
 import { createUser } from "../../utils/api";
+import CrispProvider from "../../utils/CrispProvider";
 import useFavourites from "../../hooks/useFavourites";
 import useBookings from "../../hooks/useBookings";
 
@@ -43,6 +44,7 @@ const Layout = () => {
   return (
     <>
       <div style={{ background: "var(--black)", overflow: "hidden" }}>
+        <CrispProvider />
         <Header />
         <Outlet />
       </div>

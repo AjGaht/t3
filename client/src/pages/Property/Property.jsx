@@ -6,9 +6,14 @@ import { PuffLoader } from "react-spinners";
 import { AiFillHeart } from "react-icons/ai";
 import "./Property.css";
 
-import { FaShower } from "react-icons/fa";
-import { AiTwotoneCar } from "react-icons/ai";
+import Cal, { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
+
+import { FaFileContract } from "react-icons/fa";
+import { TbTruckDelivery } from "react-icons/tb";
 import { MdLocationPin, MdMeetingRoom } from "react-icons/md";
+import { BiSupport } from "react-icons/bi";
+
 import Map from "../../components/Map/Map";
 import useAuthCheck from "../../hooks/useAuthCheck";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -83,7 +88,7 @@ const Property = () => {
             <div className="flexStart head">
               <span className="primaryText">{data?.title}</span>
               <span className="orangeText" style={{ fontSize: "1.5rem" }}>
-                $ {data?.price}
+                AED {data?.price}
               </span>
             </div>
 
@@ -91,20 +96,20 @@ const Property = () => {
             <div className="flexStart facilities">
               {/* bathrooms */}
               <div className="flexStart facility">
-                <FaShower size={20} color="#1F3E72" />
-                <span>{data?.facilities?.bathrooms} Bathrooms</span>
+                <FaFileContract size={20} color="#1F3E72" />
+                <span>{data?.facilities?.bathrooms} Contract</span>
               </div>
 
               {/* parkings */}
               <div className="flexStart facility">
-                <AiTwotoneCar size={20} color="#1F3E72" />
-                <span>{data?.facilities.parkings} Parking</span>
+                <TbTruckDelivery size={20} color="#1F3E72" />
+                <span>{data?.facilities.parking} Delivery</span>
               </div>
 
               {/* rooms */}
               <div className="flexStart facility">
-                <MdMeetingRoom size={20} color="#1F3E72" />
-                <span>{data?.facilities.bedrooms} Room/s</span>
+                <BiSupport size={20} color="#1F3E72" />
+                <span>{data?.facilities.bedrooms} Support</span>
               </div>
             </div>
 
@@ -125,7 +130,7 @@ const Property = () => {
               </span>
             </div>
 
-            {/* booking button */}
+            {/* booking button
             {bookings?.map((booking) => booking.id).includes(id) ? (
               <>
                 <Button
@@ -145,11 +150,57 @@ const Property = () => {
             ) : (
               <button
                 className="button"
-                onClick={() => {
-                  validateLogin() && setModalOpened(true);
-                }}
+                //onClick={() => {
+                //  validateLogin() && setModalOpened(true);
+                //}}
               >
-                Book your visit
+                Schedule a meeting with our team right now
+              </button>
+            )}
+
+            <BookingModal
+              opened={modalOpened}
+              setOpened={setModalOpened}
+              propertyId={id}
+              email={user?.email}
+            />*/}
+          </div>
+
+          {/* right side */}
+          
+          
+          <div className="map">
+            <Map
+              address={data?.address}
+              city={data?.city}
+              country={data?.country}
+            />
+          </div>
+          {/* booking button */}
+          {bookings?.map((booking) => booking.id).includes(id) ? (
+              <>
+                <Button
+                  variant="outline"
+                  w={"100%"}
+                  color="red"
+                  onClick={() => cancelBooking()}
+                  disabled={cancelling}
+                >
+                  <span>Cancel booking</span>
+                </Button>
+                <span>
+                  Your visit already booked for date{" "}
+                  {bookings?.filter((booking) => booking?.id === id)[0].date}
+                </span>
+              </>
+            ) : (
+              <button
+                className="button"
+                //onClick={() => {
+                //  validateLogin() && setModalOpened(true);
+                //}}
+              >
+                Schedule a meeting with our team right now
               </button>
             )}
 
@@ -159,20 +210,38 @@ const Property = () => {
               propertyId={id}
               email={user?.email}
             />
-          </div>
-
-          {/* right side */}
-          <div className="map">
-            <Map
-              address={data?.address}
-              city={data?.city}
-              country={data?.country}
-            />
-          </div>
+          
         </div>
+        <div className="flexCenter innerWidth property-container"><MyApp/></div>
       </div>
     </div>
   );
 };
 
+export function MyApp() {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi();
+      cal("ui", {
+        "styles": {
+          "branding": {
+            "brandColor": "#000000"
+          }
+        },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
+      });
+    })();
+  }, []);
+
+  return <Cal
+    calLink="techtank/30min"
+    style={{ width: "100%", height: "100%", overflow: "scroll" }}
+    config={{ layout: 'month_view' }}
+  />;
+}
+
+
 export default Property;
+
+

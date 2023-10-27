@@ -7,6 +7,13 @@
 .c-right {
   width: 100%;
 }
+
+.c-right .image-container {
+  border: 8px solid rgb(232 232 232 / 93%);
+  width: 30rem;
+  height: 35rem;
+}
+
 .c-left {
   gap: 0.5rem;
 }
@@ -72,4 +79,12 @@
     .mode{
         width: 100%;
     }
+}
+
+/* mobile screens */
+@media  (max-width: 640px){
+  .c-right .image-container{
+    width: 95%;
+    height: 25rem;
+  }
 }

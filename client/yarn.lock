@@ -271,6 +271,31 @@
     "@babel/helper-validator-identifier" "^7.22.5"
     to-fast-properties "^2.0.0"
 
+"@calcom/embed-core@1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@calcom/embed-core/-/embed-core-1.3.2.tgz#52698653a49203fe89a71f269779717c22023b03"
+  integrity sha512-qxVfWpmPcYN5hTnwoKTP9QAlhEAHy4TFh+Xu+IoCnJma/uI2BjqsUWJ0BXsmm0m8sTFthaBkGiFomS1LeMYO+Q==
+
+"@calcom/embed-react@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@calcom/embed-react/-/embed-react-1.3.0.tgz#281c1506e453b73e5bc73b499ba381e9dcda08b6"
+  integrity sha512-NbqkLd6J+VUy8jILY4GI1HEXRv3pZk1wnmL3CRrouB2y7pU5sV1qPjkgy+hwCRlYJJGiAIrspXkI/czMsfHxRQ==
+  dependencies:
+    "@calcom/embed-core" "1.3.2"
+    "@calcom/embed-snippet" "1.1.2"
+
+"@calcom/embed-snippet@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@calcom/embed-snippet/-/embed-snippet-1.1.2.tgz#c4c3028c9e3324320bfb16615f0170185bbad632"
+  integrity sha512-UKz4BRyxWLPfCIr7FfZP2Aa8w3ZMXcfwc3frCjNfWphJvJjaCLi0nAUBXFx6ooIPhVkbzvelnkllbqigZRZPiA==
+  dependencies:
+    "@calcom/embed-core" "1.3.2"
+
+"@emailjs/browser@3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@emailjs/browser/-/browser-3.10.0.tgz#74de36d95838e117cf76f7b71b68ffbe5668367d"
+  integrity sha512-pregUOBkSjjctQoAgn8DcSaeY4ypHjXAJEzWlJysM3RkQXw1ulavfHva3YYeAkxfJ7qbIhpyvRmhyQlgNG4GVg==
+
 "@emotion/babel-plugin@^11.11.0":
   version "11.11.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.11.0.tgz#c2d872b6a7767a9d176d007f5b31f7d504bb5d6c"
@@ -973,6 +998,11 @@ countup.js@^2.5.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/countup.js/-/countup.js-2.6.0.tgz#db25f37653c5ee996b4dfa03d1ab2f430c903fd1"
   integrity sha512-GeORCrCcaFUHP3RNf0/dWK+XQX+fsdtrMO31mNvsbKXNNG+DMTcgZ4dWpIG9BnOS8t5+iJbaRXgaaG9oLs0N4g==
+
+crisp-sdk-web@^1.0.19:
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/crisp-sdk-web/-/crisp-sdk-web-1.0.21.tgz#94dc22d8a609ab1645a0f0438833a2cdf7325d2e"
+  integrity sha512-jNF/zSSA0lsAWT3q4JLG6YxtMRvgai++PwesxEL2Zm6utZaN+AoWPAH01QTfjJC/c++nFT7YM56ucdi+Y5yP4A==
 
 csstype@3.0.9:
   version "3.0.9"

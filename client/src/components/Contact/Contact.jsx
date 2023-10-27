@@ -9,11 +9,11 @@ const Contact = () => {
       <div className="paddings innerWidth flexCenter c-container">
         {/* left side */}
         <div className="flexColStart c-left">
-          <span className="orangeText">Our Contact Us</span>
-          <span className="primaryText">Easy to contact us</span>
+          <span className="orangeText">Our Contacts</span>
+          <span className="primaryText">Talk to an Expert</span>
           <span className="secondaryText">
-            We always ready to help by providijng the best services for you. We
-            beleive a good blace to live can make your life better{" "}
+            Discuss the right solutions for your Business and get your Questions answered.
+            Ready to talk? Contact us at any time.
           </span>
 
           <div className="flexColStart contactModes">
@@ -26,10 +26,12 @@ const Contact = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="secondaryText">+971 4 354 3445</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Call now</div>
+                <div className="flexCenter button">
+                  <a href="tel:+971 4 354 3445">Call Now</a>
+                </div>
               </div>
 
               <div className="flexColCenter mode">
@@ -39,10 +41,12 @@ const Contact = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Chat</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="secondaryText">Whatsapp</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Chat now</div>
+                <div className="flexCenter button">
+                  <a href="https://api.whatsapp.com/send?phone=+971566822610&text=Hi">Chat Now</a>
+                </div>
               </div>
             </div>
 
@@ -55,10 +59,12 @@ const Contact = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Video Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="secondaryText">Conference </span>
                   </div>
                 </div>
-                <div className="flexCenter button">Video Call now</div>
+                <div className="flexCenter button">
+                  <a href="https://cal.com/techtank" target="_blank" rel="noopener noreferrer">Schedule Meeting</a>
+                </div>
               </div>
 
               <div className="flexColCenter mode">
@@ -68,10 +74,12 @@ const Contact = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Message</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="secondaryText">SMS</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Message now</div>
+                <div className="flexCenter button">
+                  <a href="sms:+971569982269">Send SMS</a>
+                </div>
               </div>
             </div>
           </div>
