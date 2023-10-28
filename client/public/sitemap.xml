@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
               http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
     <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
     <url>
@@ -35,6 +39,13 @@
         <video:thumbnail_loc>https://i.ytimg.com/vi/mVlvoogwt8I/maxresdefault.jpg</video:thumbnail_loc>
         <video:title>Etisalat UAE Business Offers</video:title>
         <video:description>Hassle-free Telecom and IT solutions for companies and businesses in all sectors</video:description>
+    </video:video>
+
+    <!-- Video (Instagram) -->
+    <video:video>
+        <video:content_loc>https://www.instagram.com/reel/Cuoqi-MNzQW/?utm_source=ig_web_copy_link</video:content_loc>
+        <video:title>CCTV solutions</video:title>
+        <video:description>Surveillance with Analytics</video:description>
     </video:video>
 
 </urlset>
