@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+              http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+    <url>
+        <loc>https://www.techtank.ae/</loc>
+        <lastmod>2023-10-27T11:51:40+00:00</lastmod>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
 
-<url>
-  <loc>https://www.techtank.ae/</loc>
-  <lastmod>2023-10-27T11:51:40+00:00</lastmod>
-</url>
+    <url>
+        <loc>https://www.techtank.ae/properties</loc>
+        <lastmod>2023-10-28T09:38:34+00:00</lastmod>
+        <priority>0.8</priority>
+        <changefreq>daily</changefreq>
+    </url>
 
-<url>
-  <loc>https://www.techtank.ae/properties</loc>
-  <lastmod>2023-10-28T09:38:34+00:00</lastmod>
-</url>
+    <!-- Image -->
+    <image:image>
+        <image:loc>https://www.techtank.ae/properties/645e27938b90ba42adbed599</image:loc>
+    </image:image>
 
+    <!-- Image -->
+    <image:image>
+        <image:loc>https://www.techtank.ae/properties/64392e1edfd90fb29e464fbd</image:loc>
+    </image:image>
+
+    <!-- Video -->
+    <video:video>
+        <video:content_loc>https://www.youtube.com/watch?v=mVlvoogwt8I</video:content_loc>
+        <video:thumbnail_loc>https://i.ytimg.com/vi/mVlvoogwt8I/maxresdefault.jpg</video:thumbnail_loc>
+        <video:title>Etisalat UAE Business Offers</video:title>
+        <video:description>Hassle-free Telecom and IT solutions for companies and businesses in all sectors</video:description>
+    </video:video>
 
 </urlset>
