@@ -200,7 +200,7 @@ const Property = () => {
                 //  validateLogin() && setModalOpened(true);
                 //}}
               >
-                Schedule a meeting with our team right now
+                <a href="tel:+971 4 354 3445">Talk to an Expert</a>
               </button>
             )}
 
