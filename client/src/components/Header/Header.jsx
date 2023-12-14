@@ -28,7 +28,7 @@ const Header = () => {
       <div className="flexCenter innerWidth paddings h-container">
         {/* logo */}
         <Link to="/">
-          <img src="./logo.png" alt="logo" width={100} />
+          <img src="https://techtank.ae/logo.png" alt="logo" width={100} />
         </Link>
 
         {/* menu */}
