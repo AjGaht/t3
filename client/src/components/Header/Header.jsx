@@ -50,13 +50,19 @@ const Header = () => {
             <div onClick={handleAddPropertyClick}>Add Property</div>
             <AddPropertyModal opened={modalOpened} setOpened={setModalOpened} />*/}
             {/* login button */}
-            {!isAuthenticated ? (
+            {/* {!isAuthenticated ? (
               <button className="button" onClick={loginWithRedirect}>
                 Login
               </button>
             ) : (
               <ProfileMenu user={user} logout={logout} />
-            )}
+            )} */}
+            <button className="button" onClick={(e) => {
+                e.preventDefault();
+                window.location.href = 'tel:+971 4 354 3445';
+                }}>
+                Call
+            </button>
           </div>
         </OutsideClickHandler>
 
